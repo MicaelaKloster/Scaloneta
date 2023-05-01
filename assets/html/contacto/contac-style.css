@@ -149,6 +149,62 @@
   color: var(--title-color);
 }
 
+/* CONTACT */
+.section{
+  width: 100vw;
+  height: 100vh;
+}
+
+/* FOOTER */
+.footer_container{
+  text-align: center;
+}
+
+.footer_logo{
+  width: 2rem;
+  height: auto;
+}
+
+.footer_list,
+.footer_social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_list{
+  column-gap: 2.5rem;
+}
+
+.footer_link{
+  color: var(--title-color);
+}
+
+.footer_link:hover{
+  text-decoration: underline;
+}
+
+.footer_social{
+  column-gap: 1.25rem;
+}
+
+.footer_social-link{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  transition: transform .3s;
+}
+
+.footer_social-link:hover{
+  transform: translateY(-.15rem);
+}
+
+.footer_copy{
+  display: block;
+  margin-top: .5rem;
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
   
   
 /*=============== SCROLL BAR ===============*/
