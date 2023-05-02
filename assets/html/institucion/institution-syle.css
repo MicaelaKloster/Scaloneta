@@ -155,6 +155,40 @@
   height: 100vh;
 }
 
+.institution_container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.institution_content{
+  font-size: var(--normal-font-size);
+  color: var(--title-color);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: justify;
+  width: 33%;
+}
+
+.institution_content_2{
+  width: 33%;
+  font-size: var(--normal-font-size);
+  color: var(--title-color);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.institution_img{
+  width: 300px;
+  height: auto;
+}
+
+
 /* FOOTER */
 .footer_container{
   text-align: center;
