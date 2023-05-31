@@ -99,6 +99,9 @@ img {
   overflow: hidden;
 }
 
+
+
+
 /* HEADER & NAV */
 .header{
   width: 100%;
@@ -131,6 +134,39 @@ img {
   bottom: 38rem;
 }
 
+/* .nav__toggle{
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  color: var(--title-color);
+}
+
+.nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+} */
+
+/* @media screen and (max-width: 1023px){
+  .nav__menu{
+      position: fixed;
+      background-color: hsla(199, 47%, 57%, 0.527);
+      backdrop-filter: blur(32px);
+      -webkit-backdrop-filter: blur(32px);
+      top: 0;
+      right: -100%;
+      width: 80%;
+      height: 100%;
+      border-left: 2px solid var(--text-color);
+      transition: right .3s;
+  }
+} */
+
+
+
 .nav_menu{
   display: flex;
   
@@ -139,6 +175,10 @@ img {
 .nav_list{
   display: flex;
   column-gap: 3rem;
+  /* padding: 5rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem; */
 }
 
 .nav_link{
@@ -149,6 +189,20 @@ img {
 .active-link{
   color: var(--title-color);
 }
+
+/* .nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+/* Show menu 
+.show-menu{
+  right: 0;
+} */
 
 
 /* HOME */
@@ -270,4 +324,66 @@ img {
 ::-webkit-scrollbar-thumb:hover{
   background-color: var(--button-color);
 }
-  
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px){
+  .home_content{
+    margin-inline: 1rem;
+  }
+
+  /* .nav__menu{
+    padding-bottom: 4rem;
+  }
+
+  .nav__list{
+    gap: 1rem 1.25rem;
+  }  */
+
+  .nav{
+    
+  }
+
+  .home{
+
+  }
+
+  .home_text{
+
+  }
+
+  .home_button{
+
+  }
+
+  .footer{
+
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+
+}
+
+@media screen and (min-width: 767px){
+
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px){
+
+}
+
+@media screen and (min-width: 1048px){
+
+}
+
+@media screen and (min-width: 1200px){
+
+}
+
+
+
+

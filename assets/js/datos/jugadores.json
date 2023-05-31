@@ -1,80 +1,80 @@
 [
     {
         "id": 0,
-        "dni": "30000001",
+        "dni": "30000000",
         "apellido": "Martinez",
         "nombre": "Emiliano",
         "posicion": "Arquero",
         "apodo": "Dibu",
         "dorsal": "23",
         "pieHabil": "Derecho",
-        "imagen": "1dibu.JPG"
+        "imagen": "1dibu.png"
     },
     {
         "id": 1,
-        "dni": "30000002",
+        "dni": "30000001",
         "apellido": "Armani",
         "nombre": "Franco",
         "posicion": "Arquero",
         "apodo": "Pulpo",
         "dorsal": "1",
         "pieHabil": "Derecho",
-        "imagen": "1armani.jpg"
+        "imagen": "1armani.png"
     },
     {
         "id": 2,
-        "dni": "30000003",
+        "dni": "30000002",
         "apellido": "Rulli",
         "nombre": "Gerónimo",
         "posicion": "Arquero",
         "apodo": "-",
         "dorsal": "1",
         "pieHabil": "Derecho",
-        "imagen": "1rulli.jpg"
+        "imagen": "1rulli.png"
     },
     {
         "id": 3,
         "dni": "30000003",
-        "apellido": "Romero",
-        "nombre": "Sergio",
-        "posicion": "Arquero",
-        "apodo": "Chiquito",
-        "dorsal": "1",
-        "pieHabil": "Derecho",
-        "imagen": "romero.jfif"
-    },
-    {
-        "id": 4,
-        "dni": "30000004",
         "apellido": "Molina",
         "nombre": "Nahuel",
         "posicion": "Defensor",
         "apodo": "-",
         "dorsal": "26",
         "pieHabil": "Derecho",
-        "imagen":"Dmolina.jpg"
+        "imagen":"Dmolina.png"
     },
     {
-        "id": 5,
-        "dni": "30000005",
+        "id": 4,
+        "dni": "30000004",
         "apellido": "Romero",
         "nombre": "Cristian",
         "posicion": "Defensor",
         "apodo": "Cuti",
         "dorsal": "13",
         "pieHabil": "Derecho",
-        "imagen":"DRomero.jpg"
+        "imagen":"DRomero.png"
     },
     {
-        "id": 6,
-        "dni": "30000006",
+        "id": 5,
+        "dni": "30000005",
         "apellido": "Otamendi",
         "nombre": "Nicolás",
         "posicion": "Defensor",
         "apodo": "-",
         "dorsal": "19",
         "pieHabil": "Derecho",
-        "imagen":"Dotamendi.jpg"
+        "imagen":"Dotamendi.png"
+    },
+    {
+        "id": 6,
+        "dni": "30000006",
+        "apellido": "Barco",
+        "nombre": "Valentin",
+        "posicion": "Defensor",
+        "apodo": "Colo",
+        "dorsal": "14",
+        "pieHabil": "Derecho",
+        "imagen":"DBarco.png"
     },
     {
         "id": 7,
@@ -85,7 +85,7 @@
         "apodo": "-",
         "dorsal": "3",
         "pieHabil": "Izquierdo",
-        "imagen":"Dtagliafico.jpg"
+        "imagen":"Dtagliafico.png"
     },
     {
         "id": 8,
@@ -96,7 +96,7 @@
         "apodo": "Huevo",
         "dorsal": "8",
         "pieHabil": "Izquierdo",
-        "imagen":"Dacuña.jpg"
+        "imagen":"Dacuña.png"
     },
     {
         "id": 9,
@@ -104,10 +104,10 @@
         "apellido": "Montiel",
         "nombre": "Gonzalo",
         "posicion": "Defensor",
-        "apodo": "-",
+        "apodo": "Cachete",
         "dorsal": "4",
         "pieHabil": "Derecho",
-        "imagen":"Dmontiel.jpg"
+        "imagen":"Dmontiel.png"
     },
     {
         "id": 10,
@@ -118,7 +118,7 @@
         "apodo": "-",
         "dorsal": "6",
         "pieHabil": "Derecho",
-        "imagen":"Dpezzella.jpg"
+        "imagen":"Dpezzella.png"
     },
     {
         "id": 11,
@@ -129,7 +129,7 @@
         "apodo": "Licha",
         "dorsal": "25",
         "pieHabil": "Derecho",
-        "imagen":"Dmartinez.jpg"
+        "imagen":"Dmartinez.png"
     },
     {
         "id": 12,
@@ -140,7 +140,7 @@
         "apodo": "-",
         "dorsal": "2",
         "pieHabil": "Izquierdo",
-        "imagen":"Dfoyth.jpg"
+        "imagen":"Dfoyth.png"
     },
     {
         "id": 13,
@@ -151,7 +151,7 @@
         "apodo": "Motorcito",
         "dorsal": "7",
         "pieHabil": "Derecho",
-        "imagen":"Mdepaul.jpg"
+        "imagen":"Mdepaul.png"
     },
     {
         "id": 14,
@@ -162,7 +162,7 @@
         "apodo": "-",
         "dorsal": "24",
         "pieHabil": "Derecho",
-        "imagen":"Mfernandez.jpg"
+        "imagen":"Mfernandez.png"
     },
     {
         "id": 15,
@@ -173,7 +173,7 @@
         "apodo": "-",
         "dorsal": "20",
         "pieHabil": "Derecho",
-        "imagen":"Mmacallister.jpg"
+        "imagen":"Mmacallister.png"
     },
     {
         "id": 16,
@@ -184,7 +184,7 @@
         "apodo": "-",
         "dorsal": "5",
         "pieHabil": "Derecho",
-        "imagen":"Mparedes.jpg"
+        "imagen":"Mparedes.png"
     },
     {
         "id": 17,
@@ -195,7 +195,7 @@
         "apodo": "-",
         "dorsal": "18",
         "pieHabil": "Derecho",
-        "imagen":"Mrodriguez.jpg"
+        "imagen":"Mrodriguez.png"
     },
     {
         "id": 18,
@@ -206,7 +206,7 @@
         "apodo": "-",
         "dorsal": "14",
         "pieHabil": "Derecho",
-        "imagen":"Mpalacios.jpg"
+        "imagen":"Mpalacios.png"
     },
     {
         "id": 19,
@@ -217,7 +217,7 @@
         "apodo": "Papu",
         "dorsal": "17",
         "pieHabil": "Derecho",
-        "imagen":"Mgomez.jpg"
+        "imagen":"Mgomez.png"
     },
     {
         "id": 20,
@@ -228,7 +228,7 @@
         "apodo": "Pulga",
         "dorsal": "10",
         "pieHabil": "Izquierdo",
-        "imagen":"Dmessi.jpg"
+        "imagen":"Dmessi.png"
     },
     {
         "id": 21,
@@ -239,7 +239,7 @@
         "apodo": "El araña",
         "dorsal": "9",
         "pieHabil": "Derecho",
-        "imagen":"Dalvarez.jpg"
+        "imagen":"Dalvarez.png"
     },
     {
         "id": 22,
@@ -250,7 +250,7 @@
         "apodo": "Fideo",
         "dorsal": "11",
         "pieHabil": "Izquierdo",
-        "imagen":"Ddimaria.jpg"
+        "imagen":"Ddimaria.png"
     },
     {
         "id": 23,
@@ -261,7 +261,7 @@
         "apodo": "Toro",
         "dorsal": "22",
         "pieHabil": "Derecho",
-        "imagen":"Dlautaro.jpg"
+        "imagen":"Dlautaro.png"
     },
     {
         "id": 24,
@@ -272,7 +272,7 @@
         "apodo": "La Joya",
         "dorsal": "21",
         "pieHabil": "Izquierdo",
-        "imagen":"Ddybala.jpg"
+        "imagen":"Ddybala.png"
     },
     {
         "id": 25,
@@ -283,50 +283,50 @@
         "apodo": "-",
         "dorsal": "15",
         "pieHabil": "Derecho",
-        "imagen":"Dcorrea.jpg"
+        "imagen":"Dcorrea.png"
     },
     {
         "id": 26,
-        "dni": "30000062",
+        "dni": "30000026",
         "apellido": "Almada",
         "nombre": "Thiago",
         "posicion": "Delantero",
         "apodo": "-",
         "dorsal": "16",
         "pieHabil": "Derecho",
-        "imagen":"Malmada.jpg"
+        "imagen":"Malmada.png"
     },
     {
         "id": 27,
-        "dni": "30000024",
-        "apellido": "Garnacho",
-        "nombre": "Alejandro",
+        "dni": "30000027",
+        "apellido": "Romero",
+        "nombre": "Luka",
         "posicion": "Delantero",
         "apodo": "",
         "dorsal": "",
         "pieHabil": "Derecho",
-        "imagen":"garnacho.jfif"
+        "imagen":"DLRomero.png"
     },
     {
         "id": 28,
         "dni": "30000028",
-        "apellido": "Figal",
-        "nombre": "Jorge",
+        "apellido": "Giay",
+        "nombre": "Agustin",
         "posicion": "Defensor",
         "apodo": "",
-        "dorsal": "",
+        "dorsal": "32",
         "pieHabil": "Derecho",
-        "imagen":"figal.jfif"
+        "imagen":"DGiay.png"
     },
     {
         "id": 29,
         "dni": "30000029",
-        "apellido": "Fernandez",
-        "nombre": "Pol",
+        "apellido": "Redondo",
+        "nombre": "Federico",
         "posicion": "Mediocampista",
         "apodo": "-",
-        "dorsal": "",
+        "dorsal": "27",
         "pieHabil": "Derecho",
-        "imagen":"pol.jfif"
+        "imagen":"MRedondo.png"
     }
 ]
