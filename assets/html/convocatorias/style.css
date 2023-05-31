@@ -1,0 +1,100 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/* VARIABLES CSS */
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(300, 3%, 13%);
+  --body-color: hsl(199, 47%, 57%);
+  --button-color: hsl(45, 42%, 61%);
+  --button-color-shadow: hsl(42, 36%, 49%);
+  
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Roboto Condensed', sans-serif;
+  --title-font: 'Roboto Condensed', serif;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --tiny-font-size: .625rem;
+  
+  /*========== Font weight ==========*/
+  --font-light: 300;
+  --font-medium: 400;
+  --font-semi-bold: 700;
+ 
+  /*========== z index ==========*/
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+  
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+    --tiny-font-size: .688rem;
+  }
+}
+  
+/* BASE */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+  
+html {
+  scroll-behavior: smooth;
+}
+  
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);  
+  color: var(--text-color);
+}
+  
+h1, h2, h3 {
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-weight: var(--font-medium);
+}
+  
+ul {
+  list-style: none;
+}
+  
+a {
+  text-decoration: none;
+}
+  
+img {
+  max-width: 100%;
+  height: auto;
+}
+  
+/* REUSABLE CSS CLASSES */
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+
+.main{
+  overflow: hidden;
+}
