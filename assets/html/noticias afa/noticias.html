@@ -14,7 +14,7 @@
     <!-- CSS -->   
     <link rel="stylesheet" href="./noticias.css">
 </head>
-<body>
+<body onload="cargarNoticias()">
     <!-- HEADER -->
     <header class="header" id="header">
         <nav class="navbar navbar-expand-lg">
@@ -55,9 +55,18 @@
 
     <!-- NOTICIAS -->
     <main class="main">
-        <section class="noticias section" id="noticias">
-            
-        </section>
+        <div id="news-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="30000">
+            <ol class="carousel-indicators"></ol>
+            <div class="carousel-inner"></div>
+            <a class="carousel-control-prev" href="#news-carousel" role="button" data-bs-slide="prev" onclick="changeSlide('prev')">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#news-carousel" role="button" data-bs-slide="next" onclick="changeSlide('next')">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </a>
+        </div>
     </main>
 
     <!-- FOOTER -->
@@ -117,5 +126,8 @@
 
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="./script.js"></script> 
 </body>
 </html>
