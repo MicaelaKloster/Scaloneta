@@ -1,0 +1,291 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --title-color: hsl(0, 0%, 100%);
+    --text-color: hsl(300, 3%, 13%);
+    --body-color: hsl(199, 47%, 57%);
+    --button-color: hsl(45, 42%, 61%);
+    --button-color-shadow: hsl(42, 36%, 49%);
+  
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Roboto Condensed', sans-serif;
+    --title-font: 'Roboto Condensed', serif;
+    --biggest-font-size: 1.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --tiny-font-size: .625rem;
+  
+    /*========== Font weight ==========*/
+    --font-medium: 400;
+    --font-semi-bold: 700;
+  
+    /*========== z index ==========*/
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+  
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+    :root {
+      --biggest-font-size: 3rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+      --tiny-font-size: .688rem;
+    }
+}
+  
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+  
+h1, h2, h3 {
+    color: var(--title-color);
+    font-family: var(--title-font);
+    font-weight: var(--font-medium);
+}
+  
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+/*=============== REUSABLE CSS CLASSES ===============*/
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+    
+
+  
+/* HEADER & NAV */
+.navbar{
+  background-color: hsla(199, 47%, 57%, 0.527);
+  box-shadow: 0 4px 20px hsl(199, 56%, 61%);
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  z-index: 1;
+  height: 60px;
+}
+
+.img_logo{
+  width: 2rem;
+  height: auto;
+}
+
+.nav-link{
+  color: var(--text-color);
+  font-size: 1.25rem;
+}
+
+.active-link{
+  color: var(--title-color);
+}
+
+.navbar-toggler{
+  border: transparent;
+}
+
+.navbar-toggler:focus{
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 .05rem;
+}
+
+/* JUGADORES */
+
+
+  
+
+/* FOOTER */
+.footer_container{
+  text-align: center;
+}
+
+.footer_logo{
+  width: 2rem;
+  height: auto;
+}
+
+.footer_list,
+.footer_social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_list{
+  column-gap: 2.5rem;
+}
+
+.footer_link{
+  color: var(--title-color);
+}
+
+.footer_link:hover{
+  text-decoration: underline;
+}
+
+.footer_social{
+  column-gap: 1.25rem;
+}
+
+.footer_social-link{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  transition: transform .3s;
+}
+
+.footer_social-link:hover{
+  transform: translateY(-.15rem);
+}
+
+.footer_copy{
+  display: block;
+  margin-top: .5rem;
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
+
+  /*=============== SCROLL BAR ===============*/
+  ::-webkit-scrollbar{
+    width: 0.6rem;
+    border-radius: .5rem;
+    background-color: var(--body-color);
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: var(--title-color);
+    border-radius: .5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: var(--button-color);
+  }
+  
+/*=============== BREAKPOINTS ===============*/
+
+/* 340px */
+@media screen and (max-width: 340px) {
+  .carousel-caption {
+    font-size: var(--smaller-font-size);
+    padding: 10px;
+  }
+
+  .footer_list {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  .footer_social {
+    margin-top: 1.5rem;
+  }
+}
+
+/* 576px */
+@media screen and (min-width: 341px) and (max-width: 576px) {
+  .carousel-caption {
+    font-size: var(--small-font-size);
+    padding: 15px;
+  }
+
+  .footer_list {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2.5rem;
+    row-gap: 1.5rem;
+  }
+
+  .footer_social {
+    margin-top: 1.5rem;
+  }
+}
+
+/* 767px */
+@media screen and (min-width: 577px) and (max-width: 767px){
+  .carousel-caption{
+    font-size: var(--normal-font-size);
+    padding: 20px;
+  }
+
+  .footer_list {
+    column-gap: 3.5rem;
+    row-gap: 1.5rem;
+  }
+}
+
+/* 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .carousel-caption {
+    font-size: var(--h3-font-size);
+    padding: 25px;
+  }
+
+  .footer_list {
+    column-gap: 4rem;
+  }
+}
+
+/* 1048px */
+@media screen and (min-width: 1024px) and (max-width: 1048px) {
+  .carousel-caption {
+    font-size: var(--h2-font-size);
+    padding: 30px;
+  }
+
+  .footer_list {
+    column-gap: 5rem;
+  }
+}
+
+/* 1200px */
+@media screen and (min-width: 1049px) and (max-width: 1200px) {
+  .carousel-caption {
+    font-size: var(--h1-font-size);
+    padding: 35px;
+  }
+  
+  .footer_list {
+    column-gap: 5.5rem;
+  }
+}
