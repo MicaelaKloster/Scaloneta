@@ -123,6 +123,10 @@ img {
   font-size: 1.25rem;
 }
 
+.nav-link:hover{
+  color: var(--button-color);
+}
+
 .active-link{
   color: var(--title-color);
 }
@@ -177,7 +181,7 @@ img {
   color: var(--title-color);
   font-size: var(--h3-font-size);
   box-shadow: 0 4px 1px var(--button-color-shadow);
-  border-radius: 50px;
+  border-radius: 10px;
   border: none;
   padding: .5rem;
   cursor: pointer;
@@ -190,6 +194,11 @@ img {
 }
 
 /* FOOTER */
+.footer{
+  background-color: var(--text-color);
+  padding: 1rem;
+}
+
 .footer_container{
   text-align: center;
 }

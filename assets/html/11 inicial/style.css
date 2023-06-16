@@ -120,6 +120,10 @@ img {
   font-size: 1.25rem;
 }
 
+.nav-link:hover{
+  color: var(--button-color);
+}
+
 .active-link{
   color: var(--title-color);
 }
@@ -142,6 +146,11 @@ img {
 
 
 /* FOOTER */
+.footer{
+  background-color: var(--text-color);
+  padding: 1rem;
+}
+
 .footer_container{
   text-align: center;
 }

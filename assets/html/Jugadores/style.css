@@ -99,7 +99,7 @@ img {
 .navbar{
   background-color: hsla(199, 47%, 57%, 0.527);
   box-shadow: 0 4px 20px hsl(199, 56%, 61%);
-  position: fixed;
+  position: inherit;
   /* top: 0;
   left: 0; */
   width: 100%;
@@ -115,6 +115,10 @@ img {
 .nav-link{
   color: var(--text-color);
   font-size: 1.25rem;
+}
+
+.nav-link:hover{
+  color: var(--button-color);
 }
 
 .active-link{
@@ -133,10 +137,144 @@ img {
 
 /* JUGADORES */
 
+.contenedor{
+  margin: auto;
+  margin-bottom: 2rem;
+  height: auto;
+  overflow-y: auto;
+  background-color: hsl(45deg 42% 61% / 78%);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+}
 
+.titulo{
+  width: inherit;
+  margin: auto;
+}
+
+.h1_jugador{
+  font-size: 2rem;
+  width: inherit;
+}
+
+.miBoton{
+  margin: 8px;
+  background-color: var(--button-color-shadow);
+  color: white;
+}
+
+button{
+  float: right;
+  margin: 20px 20px;
+}
+
+td{
+  text-align: center;
+}
+
+.jugadores{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+  /* Cards Jugadores */
+.card-title {
+  margin-bottom: var(--bs-card-title-spacer-y);
+  color: var(--text-color);
+  text-align: center;
+}
   
+.card {
+  --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    /* --bs-card-border-color: var(--bs-border-color-translucent); */
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: hsl(45deg 42% 61% / 78%);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #ffffffc2;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: #ffffffc4;
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+}
+
+.card:hover{
+  margin-top: -30px;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+  height: 250px;
+  width: 200px;
+}
+
+.card-img, .card-img-top {
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  border-top-right-radius: var(--bs-card-inner-border-radius);
+  width: 300px;
+  height: 185px;
+  object-fit: cover;
+}
+
+.card-text{
+  /* margin-bottom: 1rem; */
+  text-align: center;
+  font-size: 14px;
+}
+
+.card-footer{
+  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+  color: var(--text-color);
+  background-color: var(--bs-card-cap-bg);
+  border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  text-align: center;
+}
+
+.ri-edit-line,
+.ri-delete-bin-6-line{
+ font-size: 1.5rem;
+ color: var(--text-color);
+ transition: transform .3s;
+}
+
+.ri-edit-line:hover,
+.ri-delete-bin-6-line:hover{
+  cursor: pointer;
+  transform: translateY(-.15rem);
+}
+
 
 /* FOOTER */
+.footer{
+  background-color: var(--text-color);
+  padding: 1rem;
+}
+
 .footer_container{
   text-align: center;
 }

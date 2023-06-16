@@ -12,6 +12,7 @@
     --body-color: hsl(199, 47%, 57%);
     --button-color: hsl(45, 42%, 61%);
     --button-color-shadow: hsl(42, 36%, 49%);
+
   
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
@@ -34,10 +35,10 @@
     --z-normal: 1;
     --z-tooltip: 10;
     --z-fixed: 100;
-  }
+}
   
-  /* Responsive typography */
-  @media screen and (min-width: 1024px) {
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
     :root {
       --biggest-font-size: 3rem;
       --h1-font-size: 2.25rem;
@@ -48,63 +49,62 @@
       --smaller-font-size: .813rem;
       --tiny-font-size: .688rem;
     }
-  }
+}
   
-  /*=============== BASE ===============*/
-  * {
+/*=============== BASE ===============*/
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  }
+}
   
-  html {
+html {
     scroll-behavior: smooth;
-  }
+}
   
-  body {
+body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
-  }
+}
   
-  h1, h2, h3 {
+h1, h2, h3 {
     color: var(--title-color);
     font-family: var(--title-font);
     font-weight: var(--font-medium);
-  }
+}
   
-  ul {
+ul {
     list-style: none;
-  }
+}
   
-  a {
+a {
     text-decoration: none;
-  }
+}
   
-  img {
+img {
     max-width: 100%;
     height: auto;
-  }
+}
   
-  /*=============== REUSABLE CSS CLASSES ===============*/
+/*=============== REUSABLE CSS CLASSES ===============*/
 .grid{
-  display: grid;
-  gap: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
 }
-  
-.main{
-  overflow: hidden;
-}
+    
+
   
 /* HEADER & NAV */
 .navbar{
   background-color: hsla(199, 47%, 57%, 0.527);
   box-shadow: 0 4px 20px hsl(199, 56%, 61%);
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: inherit;
+  /* top: 0;
+  left: 0; */
   width: 100%;
+  z-index: 1;
   height: 60px;
 }
 
@@ -136,52 +136,84 @@
   box-shadow: 0 0 0 .05rem;
 }
 
-/* INSTITUTION */
-.section{
-  width: 100vw;
-  height: 100vh;
-}
-
-.institution_container{
-  width: 100vw;
-  height: 100vh;
+/* FORMULARIO EDITAR JUGADORES */
+.contenedor{
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: auto;
+  overflow-y: auto;
+  background-color: transparent;
+  color: var(--text-color);
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
+  width: 50%;
   justify-content: center;
 }
+.titulo{
+  color: var(--text-color);
+  text-align: center;
+}
 
-.institution_content{
-  font-size: var(--normal-font-size);
+.miForm{
+  background-color: #ffffffc2;
+  border-radius: 10px;
+  padding: 1rem;
+  color: var(--text-color);
+}
+
+.form-control{
+  color: var(--text-color);
+}
+
+.buttons{
+  text-align: end;
+}
+
+.btn-success{
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  background-color: var(--button-color);
   color: var(--title-color);
-  margin-left: 1rem;
-  margin-right: 1rem;
-  text-align: justify;
-  width: 33%;
+  font-size: var(--h3-font-size);
+  box-shadow: 0 4px 1px var(--button-color-shadow);
+  border-radius: 10px;
+  border: none;
+  padding: .5rem;
+  cursor: pointer;
 }
 
-.institution_content_2{
-  width: 33%;
-  font-size: var(--normal-font-size);
-  color: var(--title-color);
-  margin-left: 1rem;
-  margin-right: 1rem;
-  text-align: justify;
-  margin-top: 1rem;
+.btn-success:hover{
+  cursor: pointer;
+  background-color: var(--button-color-shadow);
+  box-shadow: none;
 }
 
-.institution_img{
-  width: 300px;
-  height: auto;
+.btn-warning{
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  background-color: #c4caca;
+  color: var(--text-color);
+  font-size: var(--h3-font-size);
+  box-shadow: 0 4px 1px #9fa3a3;
+  border-radius: 10px;
+  border: none;
+  padding: .5rem;
+  cursor: pointer;
 }
 
+.btn-warning:hover{
+  cursor: pointer;
+  background-color: #9fa3a3;
+  box-shadow: none;
+}
 
 /* FOOTER */
 .footer{
   background-color: var(--text-color);
   padding: 1rem;
 }
-
 .footer_container{
   text-align: center;
 }
@@ -248,3 +280,89 @@
     background-color: var(--button-color);
   }
   
+/*=============== BREAKPOINTS ===============*/
+
+/* 340px */
+@media screen and (max-width: 340px) {
+  .carousel-caption {
+    font-size: var(--smaller-font-size);
+    padding: 10px;
+  }
+
+  .footer_list {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  .footer_social {
+    margin-top: 1.5rem;
+  }
+}
+
+/* 576px */
+@media screen and (min-width: 341px) and (max-width: 576px) {
+  .carousel-caption {
+    font-size: var(--small-font-size);
+    padding: 15px;
+  }
+
+  .footer_list {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2.5rem;
+    row-gap: 1.5rem;
+  }
+
+  .footer_social {
+    margin-top: 1.5rem;
+  }
+}
+
+/* 767px */
+@media screen and (min-width: 577px) and (max-width: 767px){
+  .carousel-caption{
+    font-size: var(--normal-font-size);
+    padding: 20px;
+  }
+
+  .footer_list {
+    column-gap: 3.5rem;
+    row-gap: 1.5rem;
+  }
+}
+
+/* 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .carousel-caption {
+    font-size: var(--h3-font-size);
+    padding: 25px;
+  }
+
+  .footer_list {
+    column-gap: 4rem;
+  }
+}
+
+/* 1048px */
+@media screen and (min-width: 1024px) and (max-width: 1048px) {
+  .carousel-caption {
+    font-size: var(--h2-font-size);
+    padding: 30px;
+  }
+
+  .footer_list {
+    column-gap: 5rem;
+  }
+}
+
+/* 1200px */
+@media screen and (min-width: 1049px) and (max-width: 1200px) {
+  .carousel-caption {
+    font-size: var(--h1-font-size);
+    padding: 35px;
+  }
+  
+  .footer_list {
+    column-gap: 5.5rem;
+  }
+}
