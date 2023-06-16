@@ -271,37 +271,7 @@ img {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px){
-  .home_content{
-    margin-inline: 1rem;
-  }
-
-  /* .nav__menu{
-    padding-bottom: 4rem;
-  }
-
-  .nav__list{
-    gap: 1rem 1.25rem;
-  }  */
-
-  .nav{
-    
-  }
-
-  .home{
-
-  }
-
-  .home_text{
-
-  }
-
-  .home_button{
-
-  }
-
-  .footer{
-
-  }
+  
 }
 
 /* For medium devices */
